@@ -95,7 +95,7 @@ const FishGame = () => {
                 <a target="_blank" rel='noreferrer' href='https://nnexsus.net/'> my site</a>. I also make websites, after effects renders, music videos (occasionally), and much more. You can check it out at the same
                 places!</p>
                 <p>Also, there's 10 hidden songs in the game (typically a youtube link ID). Good luck finding them, I hid the crap out of them and they will NOT be easy to find.</p>
-                <p>If there are any issues with the game or site, please contact <a href='@mailto'>nnexsus.service@gmail.com</a> ASAP!</p>
+                <p>If there are any issues with the game or site, please contact <a href='mailto:nnexsus.service@gmail.com'>nnexsus.service@gmail.com</a> ASAP!</p>
             </div>
             <div style={{height: "180px"}}>
             </div>

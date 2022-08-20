@@ -127,7 +127,7 @@ const OtherPanels = () => {
     const [grid, setGrid] = useState(4);
 
     useState(() => {
-        axios.get("http://localhost:5000/rooms").then((res) => {
+        axios.get("https://fish-game-api.herokuapp.com/rooms").then((res) => {
             setData(res.data[0])
         }).catch((err) => {
             setErr(err)
@@ -168,7 +168,7 @@ const OtherPanels = () => {
                             {fish.decor.map((decorroom) => {
                                 return (
                                     <div key={decorroom.name}>
-                                    <p>{decorroom.name}</p><img src={`/media/sprites/decor/${decorroom.name}.png`} width="40px" height="auto" style={{imageRendering: "pixelated"}} />
+                                    <p>{decorroom.name}</p><img alt={`decor: ${decorroom.name}`} src={`/media/sprites/decor/${decorroom.name}.png`} width="40px" height="auto" style={{imageRendering: "pixelated"}} />
                                     <p>Multi: {decorroom.mult}</p> <p>Cost: {decorroom.cost}</p>
                                 </div>
                                 )

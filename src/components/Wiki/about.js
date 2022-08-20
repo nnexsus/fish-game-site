@@ -141,16 +141,16 @@ const About = () => {
                 <div className='contactContainer'>
                     <h1 className='contactTitle' style={{color: "white"}}>Links & Contacts</h1>
                         <div data-augmented-ui="tl-clip-inset t-clip-xy tr-clip-inset r-clip-xy br-clip-inset b-clip-xy bl-clip-inset l-clip-xy both" className='links'>
-                            <a target="blank" href="https://twitter.com/_nnexsus"> <div className='mediaLink'> <h2>Twitter</h2>  <Img src="/Twitter-Logo.png"></Img> </div> </a>
-                            <a target="blank" href="https://youtube.com/c/nnexsus"> <div className='mediaLink'> <h2>Youtube</h2>  <Img src="/Youtube-Logo.png"></Img> </div> </a>
-                            <a target="blank" href="https://discord.gg/d8R2tDaBK2"> <div className='mediaLink'> <h2>Discord</h2>  <Img src="/Discord-Logo.webp"></Img> </div> </a>
-                            <a target="blank" href="https://github.com/nnexsus"> <div className='mediaLink'> <h2>Github</h2> <Img src="/Github-Logo.webp"></Img>  </div> </a>
+                            <a target="blank" href="https://twitter.com/_nnexsus"> <div className='mediaLink'> <h2>Twitter</h2>  <Img alt='twitter logo link' src="/Twitter-Logo.png"></Img> </div> </a>
+                            <a target="blank" href="https://youtube.com/c/nnexsus"> <div className='mediaLink'> <h2>Youtube</h2>  <Img alt='youtube logo link' src="/Youtube-Logo.png"></Img> </div> </a>
+                            <a target="blank" href="https://discord.gg/d8R2tDaBK2"> <div className='mediaLink'> <h2>Discord</h2>  <Img alt='discord logo link' src="/Discord-Logo.webp"></Img> </div> </a>
+                            <a target="blank" href="https://github.com/nnexsus"> <div className='mediaLink'> <h2>Github</h2> <Img alt='github logo link' src="/Github-Logo.webp"></Img>  </div> </a>
                         </div>
                 </div>
                 <div className='daPlug'>
                     <h1>Check out my (main site) portfolio!</h1>
                     <h4>If you'd like a website like this one built, you can find my contacts through here or the footer!</h4>
-                    <a target="_blank" href="https://nnexsus.net"> <div className='mediaLink'> <h2>nnexsus.net</h2> <img style={{width: "60%"}} src="/solarbg.webp"></img>  </div> </a>
+                    <a target="_blank" href="https://nnexsus.net"> <div className='mediaLink'> <h2>nnexsus.net</h2> <img style={{width: "60%"}} alt='portfolio logo link' src="/solarbg.webp"></img>  </div> </a>
                 </div>
             </div>
         </Wrapper>

@@ -124,7 +124,7 @@ const RoomPanels = () => {
     const [grid, setGrid] = useState(3);
 
     useState(() => {
-        axios.get("http://localhost:5000/rooms").then((res) => {
+        axios.get("https://fish-game-api.herokuapp.com/rooms").then((res) => {
             console.log(res.data)
             setData(res.data[0])
         }).catch((err) => {
@@ -151,7 +151,7 @@ const RoomPanels = () => {
                 {data.rooms.map((fish) => (
                     <div className='fish' key={fish.name}>
                         <h2 style={{textAlign: "center"}}>{fish.name}</h2>
-                        <img width="90%" height="auto" src={`/media/sprites/rooms/${fish.name}.png`} style={{imageRendering: "pixelated"}} />
+                        <img alt={`room: ${fish.name}`} width="90%" height="auto" src={`/media/sprites/rooms/${fish.name}.png`} style={{imageRendering: "pixelated"}} />
                         <h3 style={{textAlign: "center"}}>Coin Storage: {fish.coincap}<img src={`/media/Coins.png`} width="20px" height="20px"/></h3>
                         <h3 style={{textAlign: "center"}}>Cash Storage: {fish.cashcap}<img src={`/media/Cash.png`} width="20px" height="20px"/></h3>
                         <p style={{textAlign: "center"}}>{fish.desc}</p>

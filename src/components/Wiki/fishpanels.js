@@ -136,7 +136,7 @@ const FishPanels = () => {
     const [grid, setGrid] = useState(3);
 
     useState(() => {
-        axios.get("http://localhost:5000/fish").then((res) => {
+        axios.get("https://fish-game-api.herokuapp.com/fish").then((res) => {
             setData(res.data[0])
         }).catch((err) => {
             setErr(err)
@@ -164,7 +164,7 @@ const FishPanels = () => {
                 {data.fish.map((fish) => (
                     <div className='fish' key={fish.name}>
                         <h2 style={{textAlign: "center"}}>{fish.name}</h2>
-                        <img width="90%" height="auto" src={`/media/sprites/fish/${fish.name}.png`} style={{imageRendering: "pixelated"}} />
+                        <img alt={`fish: ${fish.name}`} width="90%" height="auto" src={`/media/sprites/fish/${fish.name}.png`} style={{imageRendering: "pixelated"}} />
                         <RarityCol rare={fish.rarity}>{rarity[fish.rarity]}</RarityCol>
                         <h3 style={{textAlign: "center", margin: "0", padding: "0", height: "10px"}}>Income: {fish.income} <img src={`/media/${pays[fish.pays]}.png`} width="20px" height="20px"/></h3><h3>({fish.rate} per tick)</h3>
                         <h3 style={{textAlign: "center"}}>Cost: {fish.cost}<img src={`/media/Coins.png`} width="20px" height="20px"/></h3>

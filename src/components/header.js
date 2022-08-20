@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { useState } from 'react';
 
 const Wrapper = styled.div`
 
@@ -28,9 +27,6 @@ const Wrapper = styled.div`
 `;
 
 const Header = () => {
-
-    const [data, setData] = useState(null)
-
     return (
         <Wrapper>
             <a href='/game'><p>Fish Game</p></a>
